@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}首頁{% endblock %}
+
+{% block content %}
+<h2>歡迎來到聊天應用</h2>
+<p>這是一個簡單的聊天應用程序，支持群聊和私聊功能。您可以輕鬆地與朋友聊天、交流信息和分享想法。</p>
+<p>請選擇以下選項進行操作：</p>
+<ul>
+    <li><a href="{{ url_for('login') }}">登錄</a> - 如果您已經擁有帳號。</li>
+    <li><a href="{{ url_for('register') }}">註冊</a> - 如果您還沒有帳號，請註冊一個新帳號。</li>
+</ul>
+{% endblock %}
