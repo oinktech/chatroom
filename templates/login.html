@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}登錄{% endblock %}
+
+{% block content %}
+<h2>登錄</h2>
+<form method="post">
+    <input type="text" name="username" placeholder="用戶名" required>
+    <input type="password" name="password" placeholder="密碼" required>
+    <button type="submit">登錄</button>
+</form>
+<p>沒有帳號？<a href="{{ url_for('register') }}">註冊</a></p>
+{% endblock %}
